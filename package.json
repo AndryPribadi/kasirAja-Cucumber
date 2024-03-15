@@ -1,0 +1,25 @@
+{
+  "name": "kasiraja-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./ wdio.conf.js",
+    "wdio": "wdio run ./wdio.conf.js",
+    "allure-report": "allure generate reports/allure-results/ --clean && allure open"
+  },
+  "author": "andry",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/register": "^7.23.7",
+    "@wdio/cli": "^8.32.4",
+    "@wdio/cucumber-framework": "^8.32.4",
+    "@wdio/local-runner": "^8.32.4",
+    "@wdio/spec-reporter": "^8.32.4"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.32.4"
+  }
+}
